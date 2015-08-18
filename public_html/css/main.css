@@ -74,12 +74,32 @@ p{
     font-size: 1.4em;
 }
 
+.hundredpercent{
+    height:100%; width:100%;
+}
+
+#first{
+    opacity: 1;
+}
 #logo{
-    height: 100%; width: 100%;
+    height: 80%; width: 80%;
+    margin-left: 10%;
+}
+#second #grow{
+    transition: font-size 2s ease;
+}
+
+#second.present #grow{
+    transition: font-size 2s ease 1.5s;
+
+    font-size: 3em;
 }
 
 
- 
+.topmiddle{
+    text-align: center;
+    top: 0px;
+}
 
 
 
