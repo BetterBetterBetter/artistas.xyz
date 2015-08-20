@@ -74,7 +74,7 @@ table {
     want to leave anybody behind.
 */
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     min-height: 740px;
 
     background: rgb(215, 215, 215);
@@ -155,8 +155,6 @@ a:focus {
 .step {
     position: relative;
     width: 900px;
-    padding: 40px;
-    margin: 20px auto;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
@@ -164,9 +162,7 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
-    line-height: 1.5;
+    font-family: 'Advent Pro', georgia, serif;
 }
 
 /*
@@ -175,7 +171,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -490,7 +486,7 @@ a:focus {
 }
 
 /*
-    The last step is an overview.
+    The last step is an overview: em;   
     There is no content in it, so we make sure it's not visible because we want
     to be able to click on other steps.
 */

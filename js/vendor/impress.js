@@ -371,7 +371,7 @@
             var rootStyles = {
                 position: "absolute",
                 transformOrigin: "top left",
-                transition: "all 0s ease-in-out",
+                transition: "all 0s ease-in-out 750ms",
                 transformStyle: "preserve-3d"
             };
             
@@ -406,7 +406,16 @@
         // If a number is given, step with index given by the number is returned, if a string
         // is given step element with such id is returned, if DOM element is given it is returned
         // if it is a correct step element.
-        var getStep = function ( step ) {
+        var getStep = function ( step ) {   
+
+            if (step.id === "third") {
+                config.transitionDuration = 15000;
+                root.style.transitionTimingFunction = 'linear';
+            } else {
+                config.transitionDuration = 1500;
+                root.style.transitionTimingFunction = 'ease-in-out';
+            }
+
             if (typeof step === "number") {
                 step = step < 0 ? steps[ steps.length + step] : steps[ step ];
             } else if (typeof step === "string") {

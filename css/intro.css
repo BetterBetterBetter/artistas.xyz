@@ -1,0 +1,182 @@
+
+#first{
+    opacity: 1;
+}
+#logo{
+    height: 74%;
+    width: 74%;
+    margin-left: 11.0%;
+    margin-top: 1%;
+}
+
+#artistas span{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4em;
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #second #artistas span {
+    color: #FFF;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
+}
+
+#is span{
+    transition: .75s transform, 2s color, 2s text-shadow;
+}
+body.impress-on-third #is span{
+    transition-delay: .85s;
+    transform: skewX(-20deg);
+    color: #FF99FF;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#grow span{
+    transition: color 1s, font-size 2s, text-shadow 2s;
+}
+body.impress-on-third #grow span{
+    transition: color 1s, font-size 2s, text-shadow 2s;
+    transition-delay: 1.85s;
+    color: #800080;
+    font-size: 4.5em;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#to span{
+    transition: color 2s, text-shadow 2s;
+}
+body.impress-on-third #to span{
+    transition-delay: 2s;
+    color: #9966FF;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+#offer span{
+    transition: color 2s, text-shadow 2s;
+}
+body.impress-on-third #offer span{
+    transition-delay: 2.5s;
+    color: #3333FF;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#new span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #new span {
+    transition-delay: 3s;
+    color: #FFF;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
+}
+
+#services span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #services span {
+    transition-delay: 3.5s;
+    color: #009900;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#affiliations span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #affiliations span {
+    transition-delay: 5s;
+    color: #FFFF66;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#and span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #and span {
+    transition-delay: 6.5s;
+    color: #FFF;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
+}
+
+#opportunities span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #opportunities span {
+    transition-delay: 7s;
+    color: #FF9900;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#locally span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #locally span {
+    transition-delay: 8.5s;
+    color: #FF9933;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+.pin{
+    transition: 1.5s opacity, 3.5s transform;
+    opacity: 0;}
+body.impress-on-third .pin{
+    transition-delay: 8.75s;
+    position: absolute;
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+    transform: rotate(-46deg) translate(396%,-28%);}
+#pin{    
+    height: 169px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#and2 span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #and2 span {
+    transition-delay: 9.5s;
+    color: #FFF;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
+}
+
+#at span{
+    transition: 2s color, 2s text-shadow;
+}
+body.impress-on-third #at span {
+    transition-delay: 10s;
+    color: #CC0000;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+
+#large span{
+    transition: 4s font-size, 2s color, 2s text-shadow;
+}
+body.impress-on-third #large span{
+    transition-delay: 10.5s;
+    font-size: 4em;
+    color: #FF0000;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+
+} 
+
+.world{
+    transition: 4s opacity;
+    opacity: 0;}
+body.impress-on-third .world{
+    transition-delay: 10.75s;
+    position: absolute;
+    opacity: 0.2;
+    height: 100%; 
+    width: 100%;
+    z-index: -9;
+}
+#world{    
+    height: 569px;
+    width: 569px;
+    position: absolute;
+    top: -281px;
+    left: 154px;
+}
+
+body.impress-on-third #second{
+    opacity: 1;
+}
