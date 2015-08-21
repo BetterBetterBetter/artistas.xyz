@@ -19,7 +19,7 @@
 }
 
 .label {
-  transition: 1s font-size, 1s text-shadow, 1s color, 1s opacity, 1s stroke;
+  transition: 5s font-size, 1s text-shadow, 1s color, 1s opacity, 1s stroke;
   opacity: 0.2;
   font: 10px "Advent Pro", Helvetica, Arial, sans-serif;
   stroke: #000;
@@ -29,7 +29,7 @@
 
 text.label:hover{
   opacity: 1;
-  font-size: 20px;
+  font-size: 30px;
   color: #FFF;
   stroke: #FFF;
     text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;

@@ -78,48 +78,118 @@ p{
     font-size: 1.8em;
 }
 ol, ul{
-  list-style: square  url("../img/pinpoint.png");
+  list-style: url("../img/pinpoint.png");
 }
 li{
     font-family: 'Coming Soon', cursive;
     font-size: 2em;
 }
 
+.bulletImg{
+    height: 10%;
+    width: 10%;
+}
+
+.cardinal{
+    color: #F00000;
+    list-style: url("../img/triangle_list.png");
+}
+.fixed{
+    color: #800080;
+    list-style: url("../img/square_list.png");
+}
+.mutable{
+    color: #FFF; 
+    text-shadow: 1px 1px 3px #dbad3e, -1px 1px 3px #dbad3e, 1px -1px 3px #dbad3e, -1px -1px 3px #dbad3e;
+    list-style: url("../img/spiral_list.png");
+}
+
+.present .first{transition-delay: 3.5s;}
+.present .second{transition-delay: 4.5s;}
+.present .third{transition-delay: 5.5s;}
+.present .fourth{transition-delay: 6.5s;}
+
+
+.world2{
+    transition: .75s opacity;
+    opacity: 0; }
+.present .world2{
+    transition-delay: .75s;
+    position: absolute;
+    opacity: 0.1;
+    height: 100%; 
+    width: 100%;
+    z-index: -9;
+}
+#world2{    
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    top: -400px;
+    left: -53px;
+}
+
+
+
+
 
 .affiliates{
-    transition: 2s color, 2s text-shadow;
+    transition: 2s color, 2s text-shadow, 2s font-size;
 }
 .beneficiaries{
-    transition: 2s color, 2s text-shadow;
+    transition: 2s color, 2s text-shadow, 2s font-size;
 }
 .community{
-    transition: 2s color, 2s text-shadow;
+    transition: 2s color, 2s text-shadow, 2s font-size;
 }
 .donor{
-    transition: 2s color, 2s text-shadow;
+    transition: 2s color, 2s text-shadow, 2s font-size;
 }
 
-
 .present .affiliates{
-    transition-delay: 8.5s;
     color: #FF0000;
     text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
 }
 .present .beneficiaries{
-    transition-delay: 7.5s;
     color: #FFFF00;
     text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
 }
 .present .community{
-    transition-delay: 6.5s;
     color: #00FF00;
     text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
 }
 .present .donor{
-    transition-delay: 9.5s;
     color: #0000FF;
     text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
 }
+
+.A{transition: 3s font-size, 3s text-decoration;}
+.B{transition: 3s font-size, 3s text-decoration;}
+.C{transition: 3s font-size, 3s text-decoration;}
+.D{transition: 3s font-size, 3s text-decoration;}
+.present .A{transition-delay: 3.5s; font-size: 2em; text-decoration: underline;}
+.present .B{transition-delay: 4.5s; font-size: 2em; text-decoration: underline;}
+.present .C{transition-delay: 5.5s; font-size: 2em; text-decoration: underline;}
+.present .D{transition-delay: 6.5s; font-size: 2em; text-decoration: underline;}
+
+.Aadd{opacity: 0; transition: 3s opacity;}
+.Badd{opacity: 0; transition: 3s opacity;}
+.Cadd{opacity: 0; transition: 3s opacity;}
+.Dadd{opacity: 0; transition: 3s opacity;}
+.present .Aadd{transition-delay: 3.5s; opacity: 1;}
+.present .Badd{transition-delay: 4.5s; opacity: 1;}
+.present .Cadd{transition-delay: 5.5s; opacity: 1;}
+.present .Dadd{transition-delay: 6.5s; opacity: 1;}
+
+
+table{
+    height: 100%; width: 100%;
+}
+
+
+
+
+
 
 /* ==========================================================================
    Media Queries

@@ -9,6 +9,26 @@ body.impress-on-second #first, body.impress-on-third #first{
     margin-top: 1%;
 }
 
+#first{
+    transition: 1.5s opacity;
+    opacity: .25;
+}
+
+body.impress-on-first #first, body.impress-on-second #first, body.impress-on-third #first {
+    opacity: 1;
+}
+
+#second{
+    transition: 1.5s opacity;
+    opacity:.25;
+}
+body.impress-on-first #second{
+    opacity: 0;
+}
+body.impress-on-second #second, body.impress-on-third #second{
+    opacity: 1;
+}
+
 #artistas span{
     font-family: 'Shadows Into Light', cursive;
     font-size: 4em;
@@ -160,7 +180,7 @@ body.impress-on-third #large span{
 
 .world{
     transition: 4s opacity;
-    opacity: 0;}
+    opacity: 0; }
 body.impress-on-third .world{
     transition-delay: 10.75s;
     position: absolute;

@@ -407,8 +407,7 @@
         // is given step element with such id is returned, if DOM element is given it is returned
         // if it is a correct step element.
         var getStep = function ( step ) {   
-
-            if (step.id === "third") {
+            if (step.id === "third" && step.classList.contains('future') ) {
                 config.transitionDuration = 15000;
                 root.style.transitionTimingFunction = 'linear';
             } else {
