@@ -1,0 +1,98 @@
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.labelHead {
+  transition: 1s font-size, 1s text-shadow, 1s color;
+  font: 22px "Shadows Into Light", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label {
+  transition: 1s font-size, 1s text-shadow, 1s color, 1s opacity, 1s stroke;
+  opacity: 0.2;
+  font: 10px "Advent Pro", Helvetica, Arial, sans-serif;
+  stroke: #000;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+text.label:hover{
+  opacity: 1;
+  font-size: 20px;
+  color: #FFF;
+  stroke: #FFF;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
+    z-index: 999;
+    
+}
+
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+.chart{
+  margin-left: 0%;
+  background: rgba(255,255,255,0);
+}
+#chart1 svg{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+.node circle {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.node circle:hover{
+ stroke-width: 1px; 
+}
+
+.node text {
+  transition: 1s font-size, 1s opacity;
+  color: #000;
+  opacity: .4;
+  font: 1em 'Advent Pro', Helvetica, Arial, sans-serif;
+  pointer-events: none;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.node:hover text{
+  opacity: 1;
+  font-size: 1.8em;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+#chart1 svg{
+  border: 5px outset rgba(188,188,188,.55);
+  border-radius: 50%;
+}
+
+#chart2 svg{
+  border: 5px inset rgba(188,188,188,.55);
+  border-radius: 50%;
+}

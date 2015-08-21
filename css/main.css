@@ -56,10 +56,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1,h2,h3,h4,h5,p,ol,ul,li{
+    text-align: center;
+}
 
 h1{
     font-family: 'Rock Salt', cursive;
     font-size: 3em; 
+    line-height: 2em;
 }
 h2{
     font-family: 'Shadows Into Light', cursive;
@@ -71,13 +75,51 @@ h3{
 }
 p{
     font-family: 'Advent Pro', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.8em;
+}
+ol, ul{
+  list-style: square  url("../img/pinpoint.png");
+}
+li{
+    font-family: 'Coming Soon', cursive;
+    font-size: 2em;
 }
 
 
+.affiliates{
+    transition: 2s color, 2s text-shadow;
+}
+.beneficiaries{
+    transition: 2s color, 2s text-shadow;
+}
+.community{
+    transition: 2s color, 2s text-shadow;
+}
+.donor{
+    transition: 2s color, 2s text-shadow;
+}
 
 
-
+.present .affiliates{
+    transition-delay: 8.5s;
+    color: #FF0000;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+.present .beneficiaries{
+    transition-delay: 7.5s;
+    color: #FFFF00;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+}
+.present .community{
+    transition-delay: 6.5s;
+    color: #00FF00;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
+.present .donor{
+    transition-delay: 9.5s;
+    color: #0000FF;
+    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+}
 
 /* ==========================================================================
    Media Queries

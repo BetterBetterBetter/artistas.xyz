@@ -1,5 +1,5 @@
 
-#first{
+body.impress-on-second #first, body.impress-on-third #first{
     opacity: 1;
 }
 #logo{
@@ -70,7 +70,7 @@ body.impress-on-third #new span {
     transition: 2s color, 2s text-shadow;
 }
 body.impress-on-third #services span {
-    transition-delay: 3.5s;
+    transition-delay: 4.2s;
     color: #009900;
     text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
 }
@@ -81,7 +81,7 @@ body.impress-on-third #services span {
 body.impress-on-third #affiliations span {
     transition-delay: 5s;
     color: #FFFF66;
-    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+    text-shadow: 1px 1px 1px #313b64, -1px 1px 1px #313b64, 1px -1px 1px #313b64, -1px -1px 1px #313b64;
 }
 
 #and span{

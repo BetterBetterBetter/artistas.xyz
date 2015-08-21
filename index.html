@@ -13,8 +13,9 @@
         <link rel="stylesheet" href="css/impress.css">
         <link rel="stylesheet" href="css/warped.css">
         <link rel="stylesheet" href="css/intro.css">
+        <link rel="stylesheet" href="css/d3.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
@@ -89,19 +90,55 @@
     <div id="third" class="step" data-scale="14" data-y="" data-rotate="360" >
         
     </div>
-<!--
-    <div id="fourth" class="step" data-scale="11">
-        
-    </div>
-
-    <div id="fifth" class="step" data-scale="11">
-        
+    <div id="fourth" class="step" data-scale="1" data-z="4000">
+    <h1>How will Artistas find new clients?</h1><br><br>
+    <h3>The Internet provides the means.</h3><br><br><br>
+    <p>Through <b>search engine optimization (SEO)</b> it is possible to be the first thing our best new client would see</p>
+    <p>whether they are a <span class="community">parent</span>, <span class="beneficiaries">future artista</span>, <span class="affiliates">business affiliate</span>, or <span class="donor">donor</span>.</p>       
     </div>
     
-    <div id="sixth" class="step" data-scale="11">
-        
+    <div id="fifth" class="step" data-scale="1" data-z="4000" data-x="2000">
+    <h1>The nature of <b>SEO</b> is threefold:</h1><br><br>
+    <ol>
+    <li>Explore all industry-specific options for <b>directory listings</b>, local maps</li>
+    <li>Identify the most popular, profitable <b>keywords</b></li>
+    <li>Provide extensive keyword-related content for the <b>search engines</b>, <b>social networks</b></li>
+    </ol><br><br><br>
+    <h3>Therefore, it can be as simple as starting a blog and posting it to social media.</h3>
     </div>
--->
+
+    <div id="sixth" class="step" data-scale="1" data-z="4000" data-x="4000">
+    <h3>Since we are already listed on Google Maps...</h3>
+    <h1>ArtistaS can petition these directories:</h1>
+    <ul>
+        <li><a href="http://www.autismsource.org/">Autism Source</a> (biggest web presence)</li>
+        <li><a href="https://www.autismspeaks.org/family-services/resource-guide" target="_blank">Autism Speaks</a> (most popular)</li>
+        <li><a href="http://nationalautismnetwork.com/directory" target="_blank">National Autism Directory</a> (essential)</li>
+        <li><a href="http://autismblogsdirectory.blogspot.com/" target="_blank">Autism Blog Directory</a> (much smaller)</li>
+        <li><a href="http://autismnow.org/in-the-community/" target="_blank">Autism Now</a> (classic information site)</li>
+        <li><a href="https://twitter.com/autismdirectory" target="_blank">Autism Directory</a> (Active Twitter Account)</li>
+        <li><a href="http://www.autismkey.com/autism-organizations/" target="_blank">Autism Key</a> (national directory)</li>
+        <li><a href="http://autism.alltop.com/" target="_blank">All Top Autism News</a> (news aggregator site)</li>
+        <li><a href="http://www.autismawareness.com.au/information/directory" target="_blank">Autism Awareness</a> (national directory)</li>
+        <li>And many more, to be contacted in order of their Google search ranking.</li>
+    </ul>
+    <h1>And then we move on to</h1> 
+    <h1>keyword research...</h1></div>
+
+    <div id="seventh" class="step" data-scale="1" data-z="4000" data-x="4000" data-y="2000">
+    <h1>SEO</h1>
+    <h3>We can use these keywords to secure our Internet visibility</h3>
+    <p id="chart1" class="chart"></p>
+    <p style="font-align: center"><b>Keyword</b>, <em>Monthly Search Volume</em>, Our #rank (unlisted rank >99)</p>           
+    </div>
+    
+    <div id="eighth" class="step" data-scale="1" data-z="4000" data-x="2000" data-y="2000">
+            <h1>SEO</h1>
+    <h3>We can use these keywords to secure our Internet visibility</h3>
+    <p id="chart2" class="chart"></p>
+    <p ><b>Keyword</b>, <em>Monthly Search Volume</em>, Our #rank (unlisted rank >99)</p>  
+    </div>
+
 
 
     <!--
@@ -276,12 +313,14 @@ if ("ontouchstart" in document.documentElement) {
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-66524838-1', 'auto');
+          ga('send', 'pageview');
+
         </script>
     </body>
 </html>
