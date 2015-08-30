@@ -8,20 +8,20 @@
 }
 
 .node--leaf {
-  fill: white;
+  fill: #fff;
 }
 
 .labelHead {
   transition: 1s font-size, 1s text-shadow, 1s color;
-  font: 22px "Shadows Into Light", Helvetica, Arial, sans-serif;
+  font: 22px "Expletus Sans", Helvetica, Arial, sans-serif;
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
 
 .label {
-  transition: 5s font-size, 1s text-shadow, 1s color, 1s opacity, 1s stroke;
+  transition: 2.5s font-size, 1s text-shadow, 1s color, 1s opacity, 1s stroke;
   opacity: 0.2;
-  font: 10px "Advent Pro", Helvetica, Arial, sans-serif;
+  font: 10px "Amaranth", Helvetica, Arial, sans-serif;
   stroke: #000;
   text-anchor: middle;
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
@@ -29,7 +29,7 @@
 
 text.label:hover{
   opacity: 1;
-  font-size: 30px;
+  font-size: 22px;
   color: #FFF;
   stroke: #FFF;
     text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;

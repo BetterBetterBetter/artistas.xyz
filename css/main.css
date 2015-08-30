@@ -61,27 +61,35 @@ h1,h2,h3,h4,h5,p,ol,ul,li{
 }
 
 h1{
-    font-family: 'Rock Salt', cursive;
-    font-size: 3em; 
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4.25em; 
     line-height: 2em;
 }
 h2{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2.5em;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.75em;
 }
 h3{
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Expletus Sans', sans-serif;
+    font-size: 2.75em;
+}
+h4{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2.25em;
+}
+h5{
+    font-family: 'Chelsea Market', cursive;
     font-size: 2em;
 }
 p{
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Amaranth', sans-serif;
     font-size: 1.8em;
 }
 ol, ul{
   list-style: url("../img/pinpoint.png");
 }
 li{
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Chelsea Market', cursive;
     font-size: 2em;
 }
 
@@ -99,27 +107,44 @@ li{
     list-style: url("../img/square_list.png");
 }
 .mutable{
-    color: #FFF; 
-    text-shadow: 1px 1px 3px #dbad3e, -1px 1px 3px #dbad3e, 1px -1px 3px #dbad3e, -1px -1px 3px #dbad3e;
+    font-family: 'Jacques Francois Shadow', cursive;
+   
+    color: #5836A9; 
+    
+   
+    /* background-color: #000; */
+   
+    text-shadow: #dbad3e 1px 0px 0px,#dbad3e -1px 0px 0px,#dbad3e 0px -1px 0px,#dbad3e -1px -1px 0px;
     list-style: url("../img/spiral_list.png");
 }
 
-.present .first{transition-delay: 3.5s;}
-.present .second{transition-delay: 4.5s;}
-.present .third{transition-delay: 5.5s;}
-.present .fourth{transition-delay: 6.5s;}
+.mutable * {
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.cardinal li, .fixed li, .mutable li{
+    font-size: 18px;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.present .first{transition-delay: 1.5s;}
+.present .second{transition-delay: 2.5s;}
+.present .third{transition-delay: 3.5s;}
+.present .fourth{transition-delay: 4.5s;}
 
 
 .world2{
     transition: .75s opacity;
-    opacity: 0; }
-.present .world2{
-    transition-delay: .75s;
+    opacity: 0; 
     position: absolute;
-    opacity: 0.1;
     height: 100%; 
     width: 100%;
-    z-index: -9;
+    z-index: -9;}
+.present .world2{
+    transition-delay: .75s;
+    opacity: 0.1;
 }
 #world2{    
     position: absolute;
@@ -128,6 +153,69 @@ li{
     top: -400px;
     left: -53px;
 }
+.triangle1{
+    transition: .75s opacity ease;
+    opacity: 0; 
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    z-index: -9;}
+.present .triangle1{
+    transition-delay: .75s;
+    opacity: 0.1;
+}
+#triangle1{    
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    top: -325px;
+    left: -53px;
+}
+.square1{
+    transition: .75s opacity ease;
+    opacity: 0; 
+    height: 100%; 
+    width: 100%;
+    z-index: -9;
+    position: absolute;
+}
+.present .square1{
+    transition-delay: .75s;
+    opacity: 0.1;
+}
+#square1{    
+    position: absolute;
+    height: 800px;
+    width: 1060px;
+    top: -107px;
+    left: -80px;
+}
+.present .getsmore{
+    transition: 2.5s all ease 3s;
+    font-size: 1.13em;
+    text-shadow: #AAA -2px -2px 5px;
+}
+.spiral1{ 
+    transition: .75s opacity ease;
+    position: absolute;
+    opacity: 0; 
+    height: 100%; 
+    width: 100%;
+    z-index: -9;
+}
+.present .spiral1{
+    transition-delay: .75s;
+    opacity: 0.1;
+}
+#spiral1{    
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: -75px;
+    left: 44px;
+}
+
+
 
 
 
@@ -156,39 +244,65 @@ li{
 }
 .present .community{
     color: #00FF00;
-    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
 }
 .present .donor{
     color: #0000FF;
     text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
 }
 
-.A{transition: 3s font-size, 3s text-decoration;}
-.B{transition: 3s font-size, 3s text-decoration;}
-.C{transition: 3s font-size, 3s text-decoration;}
-.D{transition: 3s font-size, 3s text-decoration;}
-.present .A{transition-delay: 3.5s; font-size: 2em; text-decoration: underline;}
-.present .B{transition-delay: 4.5s; font-size: 2em; text-decoration: underline;}
-.present .C{transition-delay: 5.5s; font-size: 2em; text-decoration: underline;}
-.present .D{transition-delay: 6.5s; font-size: 2em; text-decoration: underline;}
+.A{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
+.B{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
+.C{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
+.D{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
+.present .A{transition-delay: 1.5s; font-size: 1.6em; text-decoration: underline;}
+.present .B{transition-delay: 2.5s; font-size: 1.6em; text-decoration: underline;}
+.present .C{transition-delay: 3.5s; font-size: 1.6em; text-decoration: underline;}
+.present .D{transition-delay: 4.5s; font-size: 1.6em; text-decoration: underline;}
 
-.Aadd{opacity: 0; transition: 3s opacity;}
-.Badd{opacity: 0; transition: 3s opacity;}
-.Cadd{opacity: 0; transition: 3s opacity;}
-.Dadd{opacity: 0; transition: 3s opacity;}
-.present .Aadd{transition-delay: 3.5s; opacity: 1;}
-.present .Badd{transition-delay: 4.5s; opacity: 1;}
-.present .Cadd{transition-delay: 5.5s; opacity: 1;}
-.present .Dadd{transition-delay: 6.5s; opacity: 1;}
+.Aadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
+.Badd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;line-height: 9px;}
+.Cadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
+.Dadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
+.present .Aadd{transition-delay: 1.5s; opacity: 1;}
+.present .Badd{transition-delay: 2.5s; opacity: 1;}
+.present .Cadd{transition-delay: 3.5s; opacity: 1;}
+.present .Dadd{transition-delay: 4.5s; opacity: 1;}
 
 
 table{
-    height: 100%; width: 100%;
+    position: static;
+    left: 2222px;
+    height: 755px; 
+    width: 1172px;
+    table-layout: fixed;
+    text-align: center;
+    border: 3px solid #000;
+}
+#table1{
+    margin-left: -100px;
+}
+td, tr, th{
+    border: 3px inset #000;
+}
+td {
+    font-size: 1.5em;
+}
+th{
+    font-size: 1.3em;
+}
+td a{
+    font-size: 2em;
+    transition: .5s color ease, .5s text-shadow ease !important;
+}
+#table1 td a:hover{
+    color: #FFF!important;
+    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64!important;
 }
 
-
-
-
+.semitransp{
+    opacity: .15!important;
+}
 
 
 /* ==========================================================================

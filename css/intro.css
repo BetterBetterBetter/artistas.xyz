@@ -30,7 +30,7 @@ body.impress-on-second #second, body.impress-on-third #second{
 }
 
 #artistas span{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Indie Flower', cursive;
     font-size: 4em;
     transition: 2s color, 2s text-shadow;
 }
@@ -180,14 +180,15 @@ body.impress-on-third #large span{
 
 .world{
     transition: 4s opacity;
-    opacity: 0; }
-body.impress-on-third .world{
-    transition-delay: 10.75s;
-    position: absolute;
-    opacity: 0.2;
+    opacity: 0; 
     height: 100%; 
     width: 100%;
     z-index: -9;
+    position: absolute;
+}
+body.impress-on-third .world{
+    transition-delay: 10.75s;
+    opacity: 0.2;
 }
 #world{    
     height: 569px;
