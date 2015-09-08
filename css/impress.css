@@ -77,13 +77,13 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-b, strong { vertical-align: inherit; font-weight: bold }
-i, em { font-style: italic }
+b, strong { /* vertical-align: inherit; */ font-weight: bold }
+i, em { font-style: italic ;vertical-align: inherit;}
 
 /*
     ... and give links a nice look.
 */
-a {
+a, .tooltipable {
     color: inherit;
     text-decoration: underline;
     padding: 0 0.1em;
@@ -97,8 +97,7 @@ a {
     transition:         0.5s;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus, .tooltipable:hover, .tooltipable:focus {
     color: #FFF;
     text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64;
 }

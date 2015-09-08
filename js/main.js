@@ -3,6 +3,8 @@ $(document).ready(function(){
 	// Init Impress
 	impress().init();
 
+
+//Maintain section-related semi-transparency
 	sectionOpacity();
 	function sectionOpacity(){
 		var $active = $('.step.active');
@@ -27,7 +29,49 @@ $(document).ready(function(){
 		sectionOpacity();
 	},5000);
 	}
-	
+
+
+
+//Add tooltips
+$('.tooltipable').each(function() {
+    $(this).qtip({
+        content: {
+            text: $(this).attr('title')
+        },
+     	style: { 
+			tip: true
+		},
+		position: {
+	        my: 'right center',  // Position my top left...
+	        at: 'left center', // at the bottom right of...
+	        target: $(this) // my target
+	    } 
+	    });
+});
+$('.tooltipableCell').each(function() {
+    $(this).qtip({
+        content: {
+            text: $(this).attr('title')
+        },
+     	style: {
+     		classes: 'QtipCell',
+     		width: $('.CRMtable td').width(), 
+			tip: true
+		},
+		position: {
+	        my: 'center',  // Position my top left...
+	        at: 'center', // at the bottom right of...
+	        target: $(this) // my target
+	    } 
+	    });
+});
+
+
+
+
+/////Graphics, Charts, and Graphs, oh my!
+
+//Chart.Js
 
 
 
@@ -37,6 +81,8 @@ $(document).ready(function(){
 
 
 
+
+//First D3 -- Circle Packing
 	var margin = 0	,
 	    diameter = 600;
 
@@ -123,7 +169,7 @@ $(document).ready(function(){
 
 
 
-	  
+//Second D3 -- layout force
 	var w = 600;
 	var h = 600;
 

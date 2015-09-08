@@ -62,8 +62,7 @@ h1,h2,h3,h4,h5,p,ol,ul,li{
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 4.25em; 
-    line-height: 2em;
+    font-size: 4.25em;
 }
 h2{
     font-family: 'Indie Flower', cursive;
@@ -107,19 +106,15 @@ li{
     list-style: url("../img/square_list.png");
 }
 .mutable{
-    font-family: 'Jacques Francois Shadow', cursive;
-   
-    color: #5836A9; 
-    
-   
-    /* background-color: #000; */
-   
-    text-shadow: #dbad3e 1px 0px 0px,#dbad3e -1px 0px 0px,#dbad3e 0px -1px 0px,#dbad3e -1px -1px 0px;
+    text-shadow: #000 1px 0px 0px, #000 -1px 0px 0px, #000 0px 1px 0px, #000 0px -1px 0px, #000 1px 1px 0px, #000 -1px -1px 0px,     #dbad3e 2px 1px 0px, #dbad3e -2px 1px 0px, #dbad3e 1px 2px 0px, #dbad3e 1px -2px 0px, #dbad3e 2px 2px 0px, #dbad3e -2px -2px 0px,     #EFF236 3px 2px 0px, #EFF236 -3px 2px 0px, #EFF236 2px 3px 0px, #EFF236 2px -3px 0px, #EFF236 3px 3px 0px, #EFF236 -3px -3px 0px;/*,      #FFF943 4px 3px 0px, #FFF943 -4px 3px 0px, #FFF943 3px 4px 0px, #FFF943 3px -4px 0px, #FFF943 4px 4px 0px, #FFF943 -4px -4px 0px; */
+    color: #FFF;
     list-style: url("../img/spiral_list.png");
 }
-
-.mutable * {
-    font-family: 'Jacques Francois Shadow', cursive;
+.mutable a{
+    text-shadow: #000 1px 0px 0px, #000 -1px 0px 0px, #000 0px 1px 0px, #000 0px -1px 0px, #000 1px 1px 0px, #000 -1px -1px 0px;
+}
+.mutable a:hover{
+        color: #EFF236;
 }
 
 .cardinal li, .fixed li, .mutable li{
@@ -129,11 +124,37 @@ li{
 }
 
 
-.present .first{transition-delay: 1.5s;}
-.present .second{transition-delay: 2.5s;}
-.present .third{transition-delay: 3.5s;}
-.present .fourth{transition-delay: 4.5s;}
+.present .first{transition-delay: .5s;}
+.present .second{transition-delay: 1.5s;}
+.present .third{transition-delay: 2.5s;}
+.present .fourth{transition-delay: 3.5s;}
+.present .fifth{transition-delay: 4.5s;}
+.present .sixth{transition-delay: 5.5s;}
+.present .seventh{transition-delay: 6.5s;}
 
+.slideIn{
+    transition: 888ms all ease;
+    opacity: 0;
+    transform: translate(-300px, 0px);
+}
+.slideInTop{
+    transition: 888ms all ease;
+    opacity: 0;
+    transform: translate(0px,999px);
+}
+.present .slideIn, .present .slideInTop{
+    opacity: 1;
+    transform: translate(0px,0px);
+}
+
+ul.cloud{
+    text-shadow: #FFF 0 1px, #FFF 1px 0, #FFF 0 -1px, #FFF -1px 0, #FFF 1px 1px, #FFF -1px -1px;
+    background-color: #FFF;
+    background-color: rgba(255,255,255,.55);
+    border-radius: 45%;
+    padding: 15%;
+    padding-top: 5%;
+}
 
 .world2{
     transition: .75s opacity;
@@ -195,7 +216,7 @@ li{
     font-size: 1.13em;
     text-shadow: #AAA -2px -2px 5px;
 }
-.spiral1{ 
+.spiral{ 
     transition: .75s opacity ease;
     position: absolute;
     opacity: 0; 
@@ -203,7 +224,7 @@ li{
     width: 100%;
     z-index: -9;
 }
-.present .spiral1{
+.present .spiral{
     transition-delay: .75s;
     opacity: 0.1;
 }
@@ -212,6 +233,13 @@ li{
     height: 800px;
     width: 800px;
     top: -75px;
+    left: 44px;
+}
+#spiral2{
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: -329px;
     left: 44px;
 }
 
@@ -235,55 +263,57 @@ li{
 }
 
 .present .affiliates{
-    color: #FF0000;
-    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+    color: #F00E48;
+    text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000;
 }
 .present .beneficiaries{
-    color: #FFFF00;
-    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+    color: #F9F909;
+    text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000;
 }
 .present .community{
-    color: #00FF00;
-    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+    color: #59F059;
+    text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000;
 }
 .present .donor{
-    color: #0000FF;
-    text-shadow: 1px 1px 3px #FFF, -1px 1px 3px #FFF, 1px -1px 3px #FFF, -1px -1px 3px #FFF;
+    color: #6F6FF0;
+    text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000;
 }
 
-.A{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
-.B{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
-.C{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
-.D{transition: 3s font-size, 3s text-decoration; vertical-align: top;}
-.present .A{transition-delay: 1.5s; font-size: 1.6em; text-decoration: underline;}
-.present .B{transition-delay: 2.5s; font-size: 1.6em; text-decoration: underline;}
-.present .C{transition-delay: 3.5s; font-size: 1.6em; text-decoration: underline;}
-.present .D{transition-delay: 4.5s; font-size: 1.6em; text-decoration: underline;}
+.A{transition: 3s font-size; vertical-align: top;}
+.B{transition: 3s font-size; vertical-align: top;}
+.C{transition: 3s font-size; vertical-align: top;}
+.D{transition: 3s font-size; vertical-align: top;}
+.present .A{transition-delay: .5s; font-size: 1.6em;}
+.present .B{transition-delay: 1.5s; font-size: 1.6em;}
+.present .C{transition-delay: 2.5s; font-size: 1.6em;}
+.present .D{transition-delay: 3.5s; font-size: 1.6em;}
 
 .Aadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
 .Badd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;line-height: 9px;}
 .Cadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
 .Dadd{opacity: 0; transition: 3s opacity; vertical-align: top; font-size: 24px;}
-.present .Aadd{transition-delay: 1.5s; opacity: 1;}
-.present .Badd{transition-delay: 2.5s; opacity: 1;}
-.present .Cadd{transition-delay: 3.5s; opacity: 1;}
-.present .Dadd{transition-delay: 4.5s; opacity: 1;}
+.present .Aadd{transition-delay: .5s; opacity: 1;}
+.present .Badd{transition-delay: 1.5s; opacity: 1;}
+.present .Cadd{transition-delay: 2.5s; opacity: 1;}
+.present .Dadd{transition-delay: 3.5s; opacity: 1;}
 
 
 table{
     position: static;
     left: 2222px;
-    height: 755px; 
+    height: 755px;
     width: 1172px;
     table-layout: fixed;
     text-align: center;
-    border: 3px solid #000;
+    border: 3px solid #A71212;
 }
-#table1{
-    margin-left: -100px;
+td.asset{
+    font-size: 1.3em;
+    text-shadow: #FFF 0 1px 0, #FFF 0 -1px 0, #FFF 0 -1px 0, #FFF 1px 0 0, #FFF -1px -1px 0, #FFF 1px 1px 0;
+    vertical-align: top;
 }
 td, tr, th{
-    border: 3px inset #000;
+    border: 3px inset #A71212;
 }
 td {
     font-size: 1.5em;
@@ -295,14 +325,91 @@ td a{
     font-size: 2em;
     transition: .5s color ease, .5s text-shadow ease !important;
 }
-#table1 td a:hover{
-    color: #FFF!important;
-    text-shadow: 1px 1px 3px #313b64, -1px 1px 3px #313b64, 1px -1px 3px #313b64, -1px -1px 3px #313b64!important;
-}
 
 .semitransp{
     opacity: .15!important;
 }
+
+#blogIframe{
+    margin-left: -240px;
+}
+.present td a:hover {
+    text-shadow: 1px 1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF, -1px -1px 0px #FFF;
+}
+
+body.impress-on-WeSee .MarketingTable, body.impress-on-WeSee2 .CRMtable, body.impress-on-WeSee3 .PriceTable{
+    opacity: 0.75!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+table.MarketingTable {
+    margin-left: -11%;
+}
+
+table.CRMtable {
+    margin-left: -13%;
+    color: #8B0000;
+    border: 3px solid #800080;
+}
+
+table.CRMtable td{
+    font-family: "Permanent Marker", helvitica, sans-serif;
+    font-size: 5em;
+    text-decoration: none;
+}
+
+.CRMtable td, .CRMtable tr, .CRMtable th {
+    border: 3px inset #800080;
+}
+
+CRMtable th{
+    color: #ED141E;
+}
+
+table.CRMtable td b{
+    font-family: "Expletus Sans", sans-serif;
+    font-size: .4em;
+    text-decoration: underline;
+    color: #ED141E;
+}
+
+.QtipCell{
+    max-width: inherit;
+}
+
+table.PriceTable {
+    width: 1453px;
+    height: 415px;
+    margin-left: -29%;
+}
+table.PriceTable th{
+    height: 30px;
+}
+table.PriceTable td.asset{
+    height: 300px;
+}
+table.PriceTable td.price{
+    height: 75px;
+    text-shadow: #000 0 1px 0, #FFF 0 -1px 0, #FFF 0 -1px 0, #FFF 1px 0 0, #FFF -1px -1px 0, #FFF 1px 1px 0;
+    font-size: 1.1em;
+}
+table.PriceTable td.price a{
+    font-size: 1em;
+}
+
+
+
+
+
 
 
 /* ==========================================================================
@@ -325,8 +432,8 @@ td a{
    ========================================================================== */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .visuallyhidden {
