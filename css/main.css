@@ -110,7 +110,7 @@ li{
     color: #FFF;
     list-style: url("../img/spiral_list.png");
 }
-.mutable a{
+.legend{
     text-shadow: #000 1px 0px 0px, #000 -1px 0px 0px, #000 0px 1px 0px, #000 0px -1px 0px, #000 1px 1px 0px, #000 -1px -1px 0px;
 }
 .mutable a:hover{
@@ -124,13 +124,7 @@ li{
 }
 
 
-.present .first{transition-delay: .5s;}
-.present .second{transition-delay: 1.5s;}
-.present .third{transition-delay: 2.5s;}
-.present .fourth{transition-delay: 3.5s;}
-.present .fifth{transition-delay: 4.5s;}
-.present .sixth{transition-delay: 5.5s;}
-.present .seventh{transition-delay: 6.5s;}
+
 
 .slideIn{
     transition: 888ms all ease;
@@ -174,14 +168,15 @@ ul.cloud{
     top: -400px;
     left: -53px;
 }
-.triangle1{
+.triangle{
     transition: .75s opacity ease;
-    opacity: 0; 
+    opacity: 0;
     position: absolute;
-    height: 100%; 
+    height: 100%;
     width: 100%;
-    z-index: -9;}
-.present .triangle1{
+    z-index: -9;
+    }
+.present .triangle{
     transition-delay: .75s;
     opacity: 0.1;
 }
@@ -192,7 +187,7 @@ ul.cloud{
     top: -325px;
     left: -53px;
 }
-.square1{
+.square{
     transition: .75s opacity ease;
     opacity: 0; 
     height: 100%; 
@@ -200,7 +195,7 @@ ul.cloud{
     z-index: -9;
     position: absolute;
 }
-.present .square1{
+.present .square{
     transition-delay: .75s;
     opacity: 0.1;
 }
@@ -228,11 +223,11 @@ ul.cloud{
     transition-delay: .75s;
     opacity: 0.1;
 }
-#spiral1{    
+#spiral1{
     position: absolute;
     height: 800px;
     width: 800px;
-    top: -75px;
+    top: -250px;
     left: 44px;
 }
 #spiral2{
@@ -330,6 +325,10 @@ td a{
     opacity: .15!important;
 }
 
+.demitransp{
+    opacity: .45!important;
+}
+
 #blogIframe{
     margin-left: -240px;
 }
@@ -337,11 +336,13 @@ td a{
     text-shadow: 1px 1px 0px #FFF, -1px 1px 0px #FFF, 1px -1px 0px #FFF, -1px -1px 0px #FFF;
 }
 
-body.impress-on-WeSee .MarketingTable, body.impress-on-WeSee2 .CRMtable, body.impress-on-WeSee3 .PriceTable{
+body.impress-on-WeSee .MarketingTable, body.impress-on-WeSee2 .CRMtable, body.impress-on-WeSee3 .PriceTable, body.impress-on-WeSee4 #CBA1{
     opacity: 0.75!important;
 }
 
-
+.mutable .cloud {
+    color: #000;
+}
 
 
 
@@ -406,10 +407,83 @@ table.PriceTable td.price a{
     font-size: 1em;
 }
 
+.GAimg{
+    margin-left: -8%;
+    margin-top: 0;
+    width: 1140px;
+}
+ul.line-legend {
+    position: relative;
+    /* margin-left: -27%; */
+    list-style: cambodian;
+}
+
+ul.line-legend li span {
+width: 200px;}
+
+.legend{
+  background-color: rgba(255, 228, 196, 0.57);
+  border-radius: 50%;
+  padding: 33px;
+  text-align: center;
+  position: absolute;
+  margin-left: -37%;
+  height: auto;
+  width: 160px;
+}
+
+
+ul.line-legend li *{
+        text-shadow: none;
+        font-family: "Expletus Sans", sans-serif;
+}
+
+.CBAtitleAside{
+    position: absolute;
+    left: -107px;
+    top: -50px;
+}
+
+.screenShot{    margin-left: -340px;}
+
+.mutable a {
+    text-shadow: #000 0 1px 0, #000 1px 0 0, #000 -1px 0 , #000 0 -1px 0, #000 -1px -1px 0, #000 -1px -1px 0;
+}
 
 
 
+.present .first{transition-delay: .5s;}
+.present .second{transition-delay: 1.5s;}
+.present .third{transition-delay: 2.5s;}
+.present .fourth{transition-delay: 3.5s;}
+.present .fifth{transition-delay: 4.5s;}
+.present .sixth{transition-delay: 5.5s;}
+.present .seventh{transition-delay: 6.5s;}
 
+
+#triangle2{
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    top: -448px;
+    left: 31px;
+}
+#square2{
+    position: absolute;
+    height: 365px;
+    width: 365px;
+    top: -100px;
+    left: 259px;
+    }
+#spiral3{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        top: -113px;
+        left: 241px;
+}
+#BBB{
+}
 
 
 /* ==========================================================================

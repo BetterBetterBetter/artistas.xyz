@@ -205,7 +205,7 @@
         
         perspective: 1000,
         
-        transitionDuration: 1000
+        transitionDuration: 2000
     };
     
     // it's just an empty function ... and a useless comment.
@@ -371,7 +371,7 @@
             var rootStyles = {
                 position: "absolute",
                 transformOrigin: "top left",
-                transition: "all 0s ease-in-out 750ms",
+                transition: "all 0s ease-in-out 2000ms",
                 transformStyle: "preserve-3d"
             };
             
@@ -411,7 +411,7 @@
                 config.transitionDuration = 15000;
                 root.style.transitionTimingFunction = 'linear';
             } else {
-                config.transitionDuration = 1500;
+                config.transitionDuration = 2000;
                 root.style.transitionTimingFunction = 'ease-in-out';
             }
 
